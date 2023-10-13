@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Product } from 'src/app/Models/Product';
 
 @Component({
   selector: 'app-product',
@@ -7,36 +8,21 @@ import { Component, Input } from '@angular/core';
 })
 export class ProductComponent {
   @Input()
-  product: Product = {
-    id: 0,
-    name: '',
-    description: '',
-    brand: '',
-    gender: '',
-    category: '',
-    size: [],
-    color: [],
-    price: 0,
-    discountPrice: 0,
-    is_in_inventory: false,
-    items_left: 0,
-    imageURL: '',
-    slug: ''
-  };
+  product: Product;
 }
-interface Product {
-  id: number;
-  name: string;
-  description: string;
-  brand: string;
-  gender: string;
-  category: string;
-  size: number[];
-  color: string[];
-  price: number;
-  discountPrice?: number;
-  is_in_inventory: boolean;
-  items_left: number;
-  imageURL: string;
-  slug: string;
-};
+// interface Product {
+//   id: number;
+//   name: string;
+//   description: string;
+//   brand: string;
+//   gender: string;
+//   category: string;
+//   size: number[];
+//   color: string[];
+//   price: number;
+//   discountPrice?: number;
+//   is_in_inventory: boolean;
+//   items_left: number;
+//   imageURL: string;
+//   slug: string;
+// };
