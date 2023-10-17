@@ -8,7 +8,7 @@ import { Product } from 'src/app/Models/Product';
 })
 export class ProductComponent {
   @Input()
-  product: Product;
+  product: Product | undefined = undefined;
 }
 // interface Product {
 //   id: number;

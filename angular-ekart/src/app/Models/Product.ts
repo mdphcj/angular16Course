@@ -1,16 +1,16 @@
 export class Product {
-  id: number;
-  name: string;
-  description: string;
-  brand: string;
-  gender: string;
-  category: string;
-  size: number[];
-  color: string[];
-  price: number;
-  discountPrice?: number;
-  is_in_inventory: boolean;
-  items_left: number;
-  imageURL: string;
-  slug: string;
+  id: number | undefined;
+  name: string | undefined;
+  description: string | undefined;
+  brand: string | undefined;
+  gender: string | undefined;
+  category: string | undefined;
+  size: number[] = [];
+  color: string[] = [];
+  price: number = 0;
+  discountPrice?: number = 0;
+  is_in_inventory: boolean | undefined;
+  items_left: number | undefined;
+  imageURL: string | undefined;
+  slug: string | undefined;
 }

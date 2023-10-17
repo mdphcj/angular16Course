@@ -7,7 +7,7 @@ import { Product } from 'src/app/Models/Product';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-  products = [
+  products: Product[] = [
     {
       id: 1,
       name: "Nike React Infinity Run Flyknit",
@@ -62,7 +62,7 @@ export class ProductListComponent {
       gender: "WOMEN",
       category: "RUNNING",
       size: [6, 7, 8, 9, 10],
-      color: ["White", , "Brown", "Red"],
+      color: ["White", "Brown", "Red"],
       price: 180,
       discountPrice: 140,
       is_in_inventory: false,
@@ -533,7 +533,7 @@ export class ProductListComponent {
       slug: "michael-feburary-sk8-hi"
     }
   ];
-  selectedProduct: Product;
+  selectedProduct: Product | undefined = undefined;
   @Input() searchText: string = '';
 
   totalProductCount = this.products.length;
@@ -543,5 +543,9 @@ export class ProductListComponent {
 
   onFilterChanged(value: string) {
     this.selectedFilterRadioButton = value;
+  }
+
+  onClickDiv(prod: Product) {
+    this.selectedProduct = prod;
   }
 }

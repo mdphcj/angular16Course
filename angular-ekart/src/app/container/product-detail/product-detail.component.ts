@@ -7,5 +7,5 @@ import { Product } from 'src/app/Models/Product';
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent {
-  product: Product
+  product: Product | undefined;
 }
