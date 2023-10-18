@@ -2,8 +2,8 @@
 
   <app-search (searchTextChanged)="setSearchText($event)"></app-search>
 
-  <product-list #productListComponent [searchText]="searchText"></product-list>
+  <product-list #productListComponenti [searchText]="searchText"></product-list>
 
-  <product-detail *ngIf="productListComponent.selectedProduct"></product-detail>
+  <product-detail *ngIf="productListComponenti.selectedProduct" [productListComp]="productListComponent"></product-detail>
 
 </div>
