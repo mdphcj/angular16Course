@@ -13,3 +13,17 @@ a{
     padding: 0 10px; 
     color: #28282B;
 }
+
+.highlight-product{
+    border: #efefef 2px solid;
+    box-shadow: 10px 10px 18px #cccccc;
+    transform: scale(1.05);
+  }
+  
+.disable-out-of-stock-product {
+    /* border: 2px dashed #28282B; */
+    /* background-color: red; */
+    opacity: 0.5;
+    /* margin: 5px; */
+}
+  

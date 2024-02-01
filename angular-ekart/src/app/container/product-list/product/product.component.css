@@ -9,12 +9,6 @@
   border: #efefef 2px solid;
 }
 
-.highlight-product{
-  border: #efefef 2px solid;
-  box-shadow: 10px 10px 18px #cccccc;
-  transform: scale(1.05);
-}
-
 .ekart-wishlist-sale-container{
   display: inline-block;
   width: 270px;
